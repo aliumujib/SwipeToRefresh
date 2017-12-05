@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipyRefreshLayout">
+        <attr name="srl_direction">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+
+        <attr name="srl_icon" format="reference"/>
+
+        <attr name="srl_animation" format="enum">
+            <enum name="fade" value="0" />
+            <enum name="scale" value="1" />
+            <enum name="rotate" value="2" />
+            <enum name="rotate_x" value="3" />
+            <enum name="rotate_y" value="4" />
+        </attr>
+
+        <attr name="srl_shadow_shape">
+            <enum name="square" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="rounded_rect" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>
