@@ -65,7 +65,7 @@ swipetorefreshlayout.setOnRefreshListener {
 
 ### Customization
 
-- Direction
+# Direction
 
 * XML:
 ```
@@ -93,7 +93,7 @@ OR
 swipetorefreshlayout.setDirection(RefreshDirection.BOTH);
 ```
 
-- Animation
+# Animation
 
 * XML:
 ```
@@ -118,6 +118,7 @@ app:srl_animation="scale"
 
 - 
 
+# Icon
 * XML:
 ```
 app:srl_icon="@your_icon_reference_here"
