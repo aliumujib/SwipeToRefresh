@@ -1,7 +1,7 @@
 SwipeToRefreshLayout 
 ================
 
-Simple SwipetoRefresh viewgroup that allows you to add custom images and animations., and swipe in both directions 
+Simple SwipetoRefresh viewgroup that allows you to add custom images and animations and swipe in both directions
 
 To include in your project, add this to your build.gradle file:
 ```
@@ -65,6 +65,8 @@ swipetorefreshlayout.setOnRefreshListener {
 
 ### Customization
 
+- Direction
+
 * XML:
 ```
 app:srl_direction="top"
@@ -91,6 +93,35 @@ OR
 swipetorefreshlayout.setDirection(RefreshDirection.BOTH);
 ```
 
+- Animation
+
+* XML:
+```
+app:srl_animation="fade"
+```
+OR
+```
+app:srl_animation="rotate"
+```
+OR
+```
+app:srl_animation="rotate_x"
+```
+OR
+```
+app:srl_animation="rotate_y"
+```
+OR
+```
+app:srl_animation="scale"
+```
+
+- 
+
+* XML:
+```
+app:srl_icon="@your_icon_reference_here"
+```
 
 ========
 
@@ -100,7 +131,7 @@ swipetorefreshlayout.setDirection(RefreshDirection.BOTH);
 ```
 The MIT License (MIT)
 
-Copyright (c) 2015 OrangeGangsters
+Copyright (c) 2015 Abdul-Mujeeb Aliu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
