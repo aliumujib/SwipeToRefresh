@@ -132,7 +132,7 @@ app:srl_icon="@your_icon_reference_here"
 ```
 The MIT License (MIT)
 
-Copyright (c) 2015 Abdul-Mujeeb Aliu
+Copyright (c) 2017 Abdul-Mujeeb Aliu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
