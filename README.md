@@ -6,7 +6,7 @@ Simple SwipetoRefresh viewgroup that allows you to add custom images and animati
 To include in your project, add this to your build.gradle file:
 ```
    //SwipeToRefreshLayout
-
+	        compile 'com.github.aliumujib:SwipeToRefresh:v1.01'
    ```
 
   
