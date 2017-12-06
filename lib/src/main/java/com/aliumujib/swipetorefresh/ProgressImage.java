@@ -22,7 +22,7 @@ import com.aliumujib.swipetorefresh.demo.library.R;
 
 public class ProgressImage extends android.support.v7.widget.AppCompatImageView {
     // Final variables
-    private final int FAD = 0, SCALE = 1, ROTATION = 2, ROTATE_X = 3, ROTATE_Y = 4;
+    private final int FAD = 0, SCALE = 1, ROTATION = 2, ROTATE_X = 3, ROTATE_Y = 4, BOUNCE = 5;
 
     // Main component references
     private Context mContext;
@@ -46,7 +46,7 @@ public class ProgressImage extends android.support.v7.widget.AppCompatImageView 
      * Enums of the animations
      */
     public enum Animations {
-        FAD, SCALE, ROTATION, ROTATE_X, ROTATE_Y
+        FAD, SCALE, ROTATION, ROTATE_X, ROTATE_Y, BOUNCE
     }
 
     public ProgressImage(Context context, Animations animations) {
