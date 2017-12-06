@@ -2,7 +2,7 @@
 <com.aliumujib.swipetorefresh.SwipeToRefreshLayout android:id="@+id/swipetorefreshlayout"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
-    app:srl_animation="rotate"
+    app:srl_animation="fade"
     app:srl_direction="both"
     app:srl_icon="@mipmap/ic_launcher_round"
     xmlns:android="http://schemas.android.com/apk/res/android"

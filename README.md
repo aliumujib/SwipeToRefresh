@@ -15,8 +15,13 @@ Starting from 1.2.3 we are moving to a new package name:
    compile 'com.github.omadahealth:swipy:1.2.3@aar'
 ```
 
-![Demo](app/src/main/res/raw/github_gif.gif)
+# Screenshots
 
+|       ROW 1  |        ROW 2    |   
+| ------------- |:-------------:| 
+| <img src="gifs/fade.gif" width="350"/>    | <img src="gifs/rotate.gif" width="350"/>  |
+| <img src="gifs/rotate_x.gif" width="350"/>  | <img src="gifs/fade.gif" width="350"/>  | 
+| <img src="gifs/scale.gif" width="350"/>  |  |
 ========
 
 ### Usage
