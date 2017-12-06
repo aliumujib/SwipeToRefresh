@@ -1,19 +1,15 @@
-SwipyRefreshLayout [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SwipyRefreshLayout-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1423)
+SwipeToRefreshLayout 
 ================
 
-A SwipeRefreshLayout extension that allows to swipe in both direction (API 9+)
+Simple SwipetoRefresh viewgroup that allows you to add custom images and animations., and swipe in both directions 
 
 To include in your project, add this to your build.gradle file:
 ```
-   //SwipyRefreshLayout
-   compile 'com.github.orangegangsters:swipy:1.2.3@aar'
-```
+   //SwipeToRefreshLayout
 
-Starting from 1.2.3 we are moving to a new package name:
-```
-   //SwipyRefreshLayout
-   compile 'com.github.omadahealth:swipy:1.2.3@aar'
-```
+   ```
+
+  
 
 # Screenshots
 
@@ -29,28 +25,40 @@ Starting from 1.2.3 we are moving to a new package name:
 If you want an example on how to use it, you can find an example app in this repo.
 
 ```
-<com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
-        android:id="@+id/swipyrefreshlayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srl_direction="both">
+<com.aliumujib.swipetorefresh.SwipeToRefreshLayout android:id="@+id/swipetorefreshlayout"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    app:srl_animation="fade"
+    app:srl_direction="both"
+    app:srl_icon="@mipmap/ic_launcher_round"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <ListView
-            android:id="@+id/listview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipetorefreshlist"
+        android:name="com.aliumujib.swipetorefreshdemo.DemoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.aliumujib.swipetorefreshdemo.DemoFragment"
+        tools:listitem="@layout/fragment_demo_item" />
 
-</com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+</com.aliumujib.swipetorefresh.SwipeToRefreshLayout>
 ```
 
 ```
-mSwipyRefreshLayout.setOnRefreshListener(new SwipyRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh(SwipyRefreshLayoutDirection direction) {
-                Log.d("MainActivity", "Refresh triggered at "
-                    + (direction == SwipyRefreshLayoutDirection.TOP ? "top" : "bottom"));
-            }
-});
+swipetorefreshlayout.setOnRefreshListener {
+            direction->
+            Log.d(TAG, "Refresh triggered at " + if (direction == RefreshDirection.TOP) "top" else "bottom")
+            Handler().postDelayed(Runnable {
+                //Hide the refresh after 2sec
+                activity.runOnUiThread(Runnable { swipetorefreshlayout.setRefreshing(false) })
+            }, DISMISS_TIMEOUT)
+        }
 ```
 
 ========
@@ -72,26 +80,20 @@ app:srl_direction="both"
 
 * Programmatically:
 ```
-mSwipyRefreshLayout.setDirection(SwipyRefreshLayoutDirection.TOP);
+swipetorefreshlayout.setDirection(RefreshDirection.TOP);
 ```
 OR
 ```
-mSwipyRefreshLayout.setDirection(SwipyRefreshLayoutDirection.BOTTOM);
+swipetorefreshlayout.setDirection(RefreshDirection.BOTTOM);
 ```
 OR
 ```
-mSwipyRefreshLayout.setDirection(SwipyRefreshLayoutDirection.BOTH);
+swipetorefreshlayout.setDirection(RefreshDirection.BOTH);
 ```
 
 
 ========
 
-### Credits
-
-### By Developers:
-[Olivier Goutay](https://github.com/olivierg13) and [Stoyan Dimitrov](https://github.com/StoyanD)
-
-========
 
 ### License
 
