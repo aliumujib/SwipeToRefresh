@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.aliumujib.swipetorefresh.SwipeToRefreshLayout android:id="@+id/swipetorefreshlayout"
-    android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
+<com.aliumujib.swipetorefresh.SwipeToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipetorefreshlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     app:srl_animation="fade"
     app:srl_direction="both"
-    app:srl_icon="@mipmap/ic_launcher_round"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    app:srl_icon="@mipmap/ic_launcher_round">
 
-    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/swipetorefreshlist"
         android:name="com.aliumujib.swipetorefreshdemo.DemoFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
         tools:context="com.aliumujib.swipetorefreshdemo.DemoFragment"
         tools:listitem="@layout/fragment_demo_item" />
