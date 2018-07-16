@@ -5,8 +5,7 @@
     android:id="@+id/swipetorefreshlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:srl_animation="fade"
-    app:srl_direction="both"
+    app:srl_animation="rotate_y"
     app:srl_icon="@mipmap/ic_launcher_round">
 
     <android.support.v7.widget.RecyclerView
